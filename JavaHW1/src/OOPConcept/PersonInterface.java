@@ -1,8 +1,10 @@
 package OOPConcept;
 
 public interface PersonInterface {
+	static final String ORGINIZATION="Business Solutions";
 	
-	static final String ORGINIZATION = "Per Scholas";
-	
-	double calculate (int num);
+	double calculate(int num); 
+	void task(String t1, String t2);
 }
+
+

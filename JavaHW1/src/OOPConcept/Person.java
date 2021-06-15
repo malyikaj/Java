@@ -1,35 +1,31 @@
 package OOPConcept;
 
-public class Person1 {
-	
-	 static int count=0;
-	 private String personName;
-	 private int personAge;
-	 private char personGender;
-	 public Person1() {
-		 count++;
-	 }
-	 public String getpersonName() {
-		 return personName;
-	 }
-	 public void setpersonName(String personName) {
-		 this.personName =personName;
-	 }
-	 public int getpersonAge() {
-		 return personAge;
-	 }
-	 public void setpersonAge(int personAge) {
-		 this.personAge =personAge;
-	 }
-	 public char getpersonGender() {
-		 return personGender;
-	 }
-	 public void setpersonGender(char personGender) {
-		 this.personGender =personGender;
-	 }
-	 public static void totalPerson() {
-			System.out.println("total person objects are:"+ count);
-		}
-			 
-	}
 
+public class Person {
+	static int count = 0;
+	String pname;
+	int page;
+	char pgender;
+	
+	
+	public Person() {
+		count++;
+	}
+	
+	public Person(String name, int age, char gender) {
+		
+		pname=name;
+		page=age;
+		pgender=gender;
+		count++;
+	}
+	
+	public void display() {
+		
+		System.out.println("Name " + this.pname );
+		System.out.println("Gender " + this.pgender);
+		System.out.println("Age " + this.page);
+		System.out.println(count);
+	}
+	
+}
